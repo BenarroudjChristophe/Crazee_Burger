@@ -1,13 +1,13 @@
-function LoginForm({ input, setInput }) {
+function LoginForm({ inputValue, setInputValue }) {
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		alert("Bonjour " + input);
+		alert("Bonjour " + inputValue);
 
-		setInput("");
+		setInputValue("");
 	};
 
 	const handleChange = (e) => {
-		setInput(e.target.value);
+		setInputValue(e.target.value);
 	};
 
 	return (
@@ -16,7 +16,7 @@ function LoginForm({ input, setInput }) {
 				<input
 					onChange={handleChange}
 					type='text'
-					value={input}
+					value={inputValue}
 					placeholder='Entrez votre prénom...'
 					required
 				/>
