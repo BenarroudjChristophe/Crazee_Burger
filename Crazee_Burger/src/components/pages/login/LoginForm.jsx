@@ -1,11 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function LoginForm() {
 	const [inputValue, setInputValue] = useState("");
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		alert("Bonjour " + inputValue);
-
 		setInputValue("");
 	};
 
@@ -25,7 +25,9 @@ function LoginForm() {
 				placeholder='Entrez votre prénom...'
 				required
 			/>
-			<button>Accéder à votre espace</button>
+			<Link to={`/order/${inputValue}`}>
+				<button>Accéder à votre espace</button>
+			</Link>
 		</form>
 	);
 }
