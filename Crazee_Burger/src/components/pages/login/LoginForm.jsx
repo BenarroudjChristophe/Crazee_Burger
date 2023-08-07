@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 
 export default function LoginForm() {
 	const [inputValue, setInputValue] = useState("");
@@ -34,5 +35,18 @@ export default function LoginForm() {
 }
 
 const LoginFormStyled = styled.form`
-border; 1px solid red
+	width: 464px;
+	height: 438.313px;
+	flex-shrink: 0;
+	border-radius: 5px;
+
+	h1 {
+		// color: #fff;
+		text-align: center;
+		font-family: Amatic SC;
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 3.8125rem; /* 127.083% */
+	}
 `;
