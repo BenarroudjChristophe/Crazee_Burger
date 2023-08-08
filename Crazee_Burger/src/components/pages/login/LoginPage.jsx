@@ -1,14 +1,15 @@
 import { styled } from "styled-components";
 import LoginForm from "./LoginForm";
-import divBeforeImage from "../../../assets/div_before.png";
-import CrazeeBurger from "../CrazeeBurger";
+import divBeforeImage from "../../../../public/images/div_before.png";
+
+import Logo from "../../reusable-ui/Logo";
 
 
 export default function LoginPage() {
 	return (
 	
 		<LoginPageStyle>
-			<CrazeeBurger />
+			<Logo />
 			<LoginForm />
 		</LoginPageStyle>
 		
@@ -16,18 +17,26 @@ export default function LoginPage() {
 }
 
 const LoginPageStyle = styled.div`
-background: url(${divBeforeImage});
-position: absolute;
-width: 94.5rem;
-height: 61.375rem;
-/* opacity: 0.5; */
-/* background: #000; */
-mix-blend-mode: darken;
-/* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 
+		::before {
+			content: "avant";
+			background: url(${divBeforeImage}) rgba(0, 0, 0, 0.7);
+			background-size: cover;
+			background-position: center;
+			background-blend-mode: darken;
+			position: absolute;			
+			z-index: -1;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
 
-
-
-
+		
+	}
 `;
 

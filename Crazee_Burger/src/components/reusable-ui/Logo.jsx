@@ -1,23 +1,23 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import logoBurger from '../../assets/logo-orange.png'
+import logoBurger from '../../../public/images/logo-orange.png'
 
-export default function CrazeeBurger() {
+export default function Logo() {
   return (
     <>
-    <CrazeeBurgerStyled>
+    <LogoStyled>
     <p>Crazee</p>
     
       <LogoImage src={logoBurger} alt="logo burger" />
       
     <p>Burger</p>
-  </CrazeeBurgerStyled>
+  </LogoStyled>
     </>
   )
 
 }
 
-const CrazeeBurgerStyled = styled.div`
+const LogoStyled = styled.div`
 display: flex; 
 justify-content: center;
 align-items: center;
