@@ -2,6 +2,11 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
+import hoverCursor from '../../../../public/images/Cursors.png'
+
+
+
+
 export default function LoginForm() {
 	const [inputValue, setInputValue] = useState("");
 	const navigate = useNavigate();
@@ -15,8 +20,10 @@ export default function LoginForm() {
 	const handleChange = (e) => {
 		setInputValue(e.target.value);
 	};
+	
 
 	return (
+		
 		<LoginFormStyled action='submit' onSubmit={handleSubmit}>
 			<h1>Bienvenue chez nous !</h1>
 			<hr />
