@@ -35,18 +35,21 @@ export default function LoginForm() {
 }
 
 const LoginFormStyled = styled.form`
-	width: 464px;
+	/* width: 464px;
 	height: 438.313px;
 	flex-shrink: 0;
-	border-radius: 5px;
+	border-radius: 5px; */
+	background: green;
+	display: flex;
+	flex-direction: column;
 
 	h1 {
 		// color: #fff;
-		text-align: center;
+		/* text-align: center;
 		font-family: Amatic SC;
 		font-size: 3rem;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 3.8125rem; /* 127.083% */
+		line-height: 3.8125rem; */
 	}
 `;
