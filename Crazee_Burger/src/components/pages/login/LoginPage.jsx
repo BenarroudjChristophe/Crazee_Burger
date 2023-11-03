@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import  styled  from "styled-components";
 import LoginForm from "./LoginForm";
 import divBeforeImage from "/images/div_before.png";
 
@@ -7,11 +7,16 @@ import Logo from "../../reusable-ui/Logo";
 
 export default function LoginPage() {
 	return (
-	
-		<LoginPageStyle>
+
+		<LoginPageStyled>
+			
+
 			<Logo />
 			<LoginForm />
-		</LoginPageStyle>
+			
+
+		</LoginPageStyled>
+
 		
 	);
 }
@@ -40,4 +45,3 @@ const LoginPageStyle = styled.div`
 		
 	
 `;
-
