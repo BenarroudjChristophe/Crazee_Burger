@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import NavBar from "./reusable-ui/NavBar";
 
 function OrderPage() {
 
@@ -6,10 +7,8 @@ function OrderPage() {
     
 	return (
 		<>
-			<h1>Bonjour {username} </h1>
-			<Link to='/'>
-				<button>Déconnexion</button>
-			</Link>
+			<NavBar> </NavBar>
+			
 		</>
 	);
 }
