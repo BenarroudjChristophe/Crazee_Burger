@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import NavBar from "./reusable-ui/NavBar";
+import NavBar from "../../reusable-ui/NavBar";
 
 function OrderPage() {
 

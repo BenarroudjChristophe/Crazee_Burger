@@ -13,7 +13,6 @@ function NavBar() {
   return (
 <>
     <Container>
-
     <LeftSide><Logo /></LeftSide>
     <RightSide>
         <h1>Hey,Bob</h1>         
